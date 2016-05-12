@@ -304,7 +304,7 @@ namespace FinalChessProject.BoardSettings
                     playersound.Play();
                 }
                 board.getBoardPieces()[m.getMovePosition().Item1, m.getMovePosition().Item2] =
-                new Queen(Tuple.Create(m.getMovePosition().Item1, m.getMovePosition().Item2), pieceType.whiteQueen, pieceColor.White);
+                new Queen(Tuple.Create(m.getMovePosition().Item1, m.getMovePosition().Item2), pieceType.blackQueen, pieceColor.Black);
                 board.getBoardPieces()[tmpPiece.getPiecePosition().Item1, tmpPiece.getPiecePosition().Item2] = null;
 
             }
